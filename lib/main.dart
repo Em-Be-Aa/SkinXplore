@@ -8,7 +8,9 @@ import 'package:skinxplore/pages/login_page.dart';
 import 'package:skinxplore/pages/services_page.dart';
 
 void main() {
+
   runApp(const MyApp());
+
 }
 
 class MyApp extends StatefulWidget {

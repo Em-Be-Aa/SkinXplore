@@ -4,17 +4,23 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-class HomeUtility extends StatelessWidget {
+class HomeUtility extends StatefulWidget {
   const HomeUtility({super.key});
 
   @override
+  State<HomeUtility> createState() => _HomeUtilityState();
+}
+
+class _HomeUtilityState extends State<HomeUtility> {
+  @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       backgroundColor: Color(0XFFE8E4EC),
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: Text(
-          "SkinXplore",
+          'SkinXplore',
           style: TextStyle(
               fontSize: 40,
               fontFamily: 'Poppins',
@@ -159,13 +165,7 @@ class HomeUtility extends StatelessWidget {
       ),
       body: Row(
         children: [
-          Expanded(
-            flex: 1,
-            child: Container(
-              height: 1000,
-              color: Colors.transparent,
-            ),
-          ),
+
           Expanded(
             flex: 5,
             child: Column(
