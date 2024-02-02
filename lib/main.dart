@@ -8,9 +8,7 @@ import 'package:skinxplore/pages/login_page.dart';
 import 'package:skinxplore/pages/services_page.dart';
 
 void main() {
-
   runApp(const MyApp());
-
 }
 
 class MyApp extends StatefulWidget {
@@ -21,12 +19,10 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-
-
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        title: "SkinXplore",
         debugShowCheckedModeBanner: false,
         home: HomePage(),
         routes: {
@@ -35,7 +31,7 @@ class _MyAppState extends State<MyApp> {
           '/loginpage': (context) => LoginPage(),
           '/aboutpage': (context) => AboutPage(),
           '/flupage': (context) => MyHomePage(),
-          '/detailexampage': (context) =>DetailExam(),
+          '/detailexampage': (context) => DetailExam(),
         });
   }
 }

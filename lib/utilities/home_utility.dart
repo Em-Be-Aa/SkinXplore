@@ -1,7 +1,5 @@
 // ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, sort_child_properties_last, prefer_const_literals_to_create_immutables
 
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 class HomeUtility extends StatefulWidget {
@@ -14,24 +12,36 @@ class HomeUtility extends StatefulWidget {
 class _HomeUtilityState extends State<HomeUtility> {
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
+    final screenHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
       backgroundColor: Color(0XFFE8E4EC),
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: Text(
-          'SkinXplore',
-          style: TextStyle(
-              fontSize: 40,
-              fontFamily: 'Poppins',
-              fontWeight: FontWeight.bold,
-              shadows: [
-                Shadow(
-                  color: Colors.transparent,
-                  blurRadius: 2.0,
-                  offset: Offset(1.0, 1.0),
+        title: Container(
+          width: 350,
+          child: Row(
+            children: [
+              Container(
+                height: 106,
+                width: 105,
+                decoration: BoxDecoration(
+                    color: Colors.transparent,
+                    image: DecorationImage(
+                        image: AssetImage('assets/images/logo.png'),
+                        alignment: Alignment.centerLeft)),
+              ),
+              Text(
+                "SkinXplore",
+                style: TextStyle(
+                  fontFamily: "Poppins",
+                  fontWeight: FontWeight.bold,
+                  fontSize: 30,
                 ),
-              ]),
+              )
+            ],
+          ),
         ),
         foregroundColor: Color(0xFF2C323F),
         backgroundColor: Colors.transparent,
@@ -39,9 +49,10 @@ class _HomeUtilityState extends State<HomeUtility> {
         elevation: 0.0,
         actions: [
           Container(
-            margin: EdgeInsets.symmetric(horizontal: 20.0),
+            margin: EdgeInsets.symmetric(horizontal: screenWidth * 0.015),
             height: 5,
-            width: 100, // Adjust the margin as needed
+            width: 100,
+            color: Colors.transparent, // Adjust the margin as needed
             child: TextButton(
               child: Text(
                 "Services",
@@ -60,9 +71,10 @@ class _HomeUtilityState extends State<HomeUtility> {
             ),
           ),
           Container(
-            margin: EdgeInsets.symmetric(horizontal: 20.0),
+            margin: EdgeInsets.symmetric(horizontal: screenWidth * 0.015),
             height: 5,
             width: 100, // Adjust the margin as needed
+            color: Colors.transparent,
             child: TextButton(
               child: Text(
                 "Pricing",
@@ -80,7 +92,7 @@ class _HomeUtilityState extends State<HomeUtility> {
             ),
           ),
           Container(
-            margin: EdgeInsets.symmetric(horizontal: 20.0),
+            margin: EdgeInsets.symmetric(horizontal: screenWidth * 0.015),
             height: 5,
             width: 100, // Adjust the margin as needed
             child: TextButton(
@@ -98,7 +110,7 @@ class _HomeUtilityState extends State<HomeUtility> {
             ),
           ),
           Container(
-            margin: EdgeInsets.symmetric(horizontal: 20.0),
+            margin: EdgeInsets.symmetric(horizontal: screenWidth * 0.015),
             height: 5,
             width: 110, // Adjust the margin as needed
             child: TextButton(
@@ -119,7 +131,7 @@ class _HomeUtilityState extends State<HomeUtility> {
             ),
           ),
           SizedBox(
-            width: 150,
+            width: screenWidth * 0.1,
           ),
           Center(
             child: Container(
@@ -127,7 +139,7 @@ class _HomeUtilityState extends State<HomeUtility> {
               height: 50,
               width: 100, // Adjust the margin as needed
               decoration: BoxDecoration(
-                color: Color(0xFF2C323F),
+                color: Color(0xFF146356),
                 borderRadius: BorderRadius.circular(30.0),
               ),
 
@@ -159,86 +171,161 @@ class _HomeUtilityState extends State<HomeUtility> {
             ),
           ),
           SizedBox(
-            width: 30,
+            width: screenWidth * 0.02,
           ),
         ],
       ),
-      body: Row(
-        children: [
-
-          Expanded(
-            flex: 5,
-            child: Column(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Row(
               children: [
-                Expanded(
-                  flex: 2,
-                  child: Container(
-                    width: 150,
-                  ),
-                ),
-                Expanded(
-                  flex: 5,
-                  child: Container(
-                    width: 600,
-                    color: Colors.transparent,
-                    child: Center(
-                      child: Text(
-                        'Your very own self diagnosis tool.',
-                        style: TextStyle(
-                          height: 1,
-                          fontSize: 90,
-                          fontFamily: 'Poppins',
-                          fontWeight: FontWeight.bold,
-                          color: Color(
-                              0xFF2C323F), // Change this color to the desired text color
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-                Expanded(
-                  flex: 2,
+                Container(
+                  height: 655,
+                  width: screenWidth * 0.7,
+                  color: Colors.transparent,
                   child: Center(
                     child: Container(
-                      width: 320,
-                      height: 70,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Color(0xFF2C323F).withOpacity(0.9),
-                      ),
-                      child: TextButton(
-                          onPressed: () {},
-                          child: Text(
-                            'Learn More',
-                            style: TextStyle(
-                              fontSize: 25,
-                              fontFamily: 'Poppins',
-                              color: Color(
-                                  0XFFE8E4EC), // Change this color to the desired text color
+                      height: 500,
+                      width: screenWidth * 0.5,
+                      color: Colors.transparent,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            alignment: Alignment.centerLeft,
+                            color: Colors.transparent,
+                            child: Text(
+                              "Your very own",
+                              style: TextStyle(
+                                fontSize: 85,
+                                fontWeight: FontWeight.bold,
+                                fontFamily: 'Poppins',
+                                color: Color(0xFF2C323F),
+                                height: 0.9,
+                                letterSpacing: -0.5,
+                              ),
                             ),
-                          )),
+                          ),
+                          Container(
+                            alignment: Alignment.centerLeft,
+                            child: Text(
+                              "self diagnosis",
+                              style: TextStyle(
+                                fontSize: 85,
+                                fontWeight: FontWeight.bold,
+                                fontFamily: 'Poppins',
+                                color: Color(0xFF146356),
+                                height: 0.9,
+                                letterSpacing: -0.5,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            alignment: Alignment.centerLeft,
+                            child: Text(
+                              "tool.",
+                              style: TextStyle(
+                                fontSize: 85,
+                                fontWeight: FontWeight.bold,
+                                fontFamily: 'Poppins',
+                                color: Color(0xFF2C323F),
+                                height: 0.9,
+                                letterSpacing: -0.5,
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: screenHeight * 0.1,
+                          ),
+                          Row(
+                            children: [
+                              Container(
+                                margin: EdgeInsets.symmetric(horizontal: 1.0),
+                                height: 80,
+                                width: 350, // Adjust the margin as needed
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(20.0),
+                                ),
+                                child: Material(
+                                  elevation: 10,
+                                  shadowColor: Colors.black,
+                                  child: TextButton(
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          "Learn More",
+                                          style: TextStyle(
+                                            fontSize: 25,
+                                            fontFamily: 'Poppins',
+                                            fontWeight: FontWeight.bold,
+                                            color: Color(
+                                                0xFF2C323F), // Change this color to the desired text color
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: screenWidth * 0.05,
+                                        ),
+                                        Container(
+                                          width:
+                                              50, // Adjust the size of the circle as needed
+                                          height:
+                                              50, // Adjust the size of the circle as needed
+                                          decoration: BoxDecoration(
+                                            shape: BoxShape.circle,
+                                            color: Color(
+                                                0xFF136356), // Change the color of the circle as needed
+                                          ),
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              color: Colors.transparent,
+                                              image: DecorationImage(
+                                                  image: AssetImage(
+                                                      'assets/images/arrow.png'),
+                                                  alignment: Alignment.center),
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                    onPressed: () {},
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
-                Expanded(
-                  flex: 2,
-                  child: SizedBox(),
+                Container(
+                  color: Colors.transparent,
+                  height: 655,
+                  width: screenWidth * 0.2,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.transparent,
+                      image: DecorationImage(
+                          image: AssetImage('assets/images/hero_image.png'),
+                          alignment: Alignment.center),
+                    ),
+                  ),
                 ),
+                Container(
+                  width: screenWidth * 0.1,
+                )
               ],
             ),
-          ),
-          Expanded(
-            flex: 4,
-            child: Container(
-              width: 200,
-              decoration: BoxDecoration(
-                  color: Colors.transparent,
-                  image: DecorationImage(
-                    image: AssetImage('assets/images/hom.png'),
-                  )),
-            ),
-          ),
-        ],
+            Container(
+              height: 1000,
+              width: screenWidth,
+              color: Colors.transparent,
+            )
+          ],
+        ),
       ),
     );
   }

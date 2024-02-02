@@ -86,7 +86,7 @@ class LoginUtility extends StatelessWidget {
                   flex: 2,
                   child: Center(
                     child: Container(
-                      width: 530,
+                      width: 430,
                       height: 50,
                       decoration: BoxDecoration(
                         color: Color(0xFFACADB9),
@@ -111,7 +111,7 @@ class LoginUtility extends StatelessWidget {
                   flex: 2,
                   child: Center(
                     child: Container(
-                      width: 530,
+                      width: 430,
                       height: 50,
                       decoration: BoxDecoration(
                         color: Color(0xFFACADB9),
@@ -136,7 +136,7 @@ class LoginUtility extends StatelessWidget {
                   flex: 2,
                   child: Center(
                     child: Container(
-                      width: 530,
+                      width: 430,
                       height: 50,
                       decoration: BoxDecoration(
                         color: Color(0xFFACADB9),
@@ -144,6 +144,7 @@ class LoginUtility extends StatelessWidget {
                             15.0), // Adjust the border radius as needed
                       ),
                       child: TextField(
+                        obscureText: true,
                         decoration: InputDecoration(
                           border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(15.0)),
@@ -184,7 +185,9 @@ class LoginUtility extends StatelessWidget {
                 ),
                 Expanded(
                   flex: 2,
-                  child: Container(),
+                  child: Text(
+                    "Not a member."
+                  ),
                 )
               ]),
             ),
