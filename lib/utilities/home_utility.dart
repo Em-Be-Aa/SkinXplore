@@ -1,9 +1,9 @@
 // ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, sort_child_properties_last, prefer_const_literals_to_create_immutables, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
-import 'package:skinxplore/utilities/collaborations.dart';
-import 'package:skinxplore/utilities/hero_section.dart';
-import 'package:skinxplore/utilities/home_services.dart';
+import 'package:skinxplore/utilities_items/collaborations.dart';
+import 'package:skinxplore/utilities_items/hero_section.dart';
+import 'package:skinxplore/utilities_items/home_services.dart';
 
 class HomeUtility extends StatefulWidget {
   const HomeUtility({super.key});

@@ -4,7 +4,7 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:skinxplore/utilities/http.dart';
+import 'package:skinxplore/utilities_items/http.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
