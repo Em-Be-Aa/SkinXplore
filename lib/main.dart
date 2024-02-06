@@ -7,6 +7,8 @@ import 'package:skinxplore/pages/home_page.dart';
 import 'package:skinxplore/pages/login_page.dart';
 import 'package:skinxplore/pages/services_page.dart';
 
+import 'pages/chat_page.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -24,7 +26,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
         title: "SkinXplore",
         debugShowCheckedModeBanner: false,
-        home: HomePage(),
+        home: Chat(),
         routes: {
           '/homepage': (context) => HomePage(),
           '/servicespage': (context) => ServicesPage(),
@@ -32,6 +34,7 @@ class _MyAppState extends State<MyApp> {
           '/aboutpage': (context) => AboutPage(),
           '/flupage': (context) => MyHomePage(),
           '/detailexampage': (context) => DetailExam(),
+          '/chatpage': (context) => Chat(),
         });
   }
 }
