@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
+import 'package:skinxplore/constants/break_points.dart';
 
 class HomeServices extends StatelessWidget {
   const HomeServices({super.key});
@@ -41,6 +42,8 @@ class HomeServices extends StatelessWidget {
                         fontFamily: 'Poppins',
                         fontSize: 50,
                         height: 1.5,
+                        fontWeight: FontWeight.bold,
+                        color: Color(blackColor),
                       ),
                     ),
                   ),
@@ -51,6 +54,8 @@ class HomeServices extends StatelessWidget {
                       style: TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 50,
+                        fontWeight: FontWeight.bold,
+                        color: Color(blackColor),
                       ),
                     ),
                   ),
@@ -60,9 +65,10 @@ class HomeServices extends StatelessWidget {
                       "Cross Platform availabilty for users,",
                       style: TextStyle(
                         fontFamily: 'Poppins',
-                        fontSize: 25,
+                        fontSize: 22,
                         height: 2,
                         letterSpacing: -0.5,
+                        color: Color(blackColor),
                       ),
                     ),
                   ),
@@ -72,8 +78,9 @@ class HomeServices extends StatelessWidget {
                       "healthcare professionals and",
                       style: TextStyle(
                         fontFamily: 'Poppins',
-                        fontSize: 25,
+                        fontSize: 22,
                         letterSpacing: -0.5,
+                        color: Color(blackColor),
                       ),
                     ),
                   ),
@@ -83,8 +90,9 @@ class HomeServices extends StatelessWidget {
                       "organizations.",
                       style: TextStyle(
                         fontFamily: 'Poppins',
-                        fontSize: 25,
+                        fontSize: 22,
                         letterSpacing: -0.5,
+                        color: Color(blackColor),
                       ),
                     ),
                   ),
@@ -156,6 +164,7 @@ class HomeServices extends StatelessWidget {
                                     fontFamily: 'Poppins',
                                     fontSize: 25,
                                     fontWeight: FontWeight.bold,
+                                    color: Color(blackColor),
                                   ),
                                 ),
                               ),
@@ -170,6 +179,7 @@ class HomeServices extends StatelessWidget {
                                     fontFamily: 'Poppins',
                                     fontSize: 17,
                                     height: 1.2,
+                                    color: Color(blackColor),
                                   ),
                                 ),
                               )
@@ -238,6 +248,7 @@ class HomeServices extends StatelessWidget {
                                     fontFamily: 'Poppins',
                                     fontSize: 25,
                                     fontWeight: FontWeight.bold,
+                                    color: Color(blackColor),
                                   ),
                                 ),
                               ),
@@ -252,6 +263,7 @@ class HomeServices extends StatelessWidget {
                                     fontFamily: 'Poppins',
                                     fontSize: 17,
                                     height: 1.2,
+                                    color: Color(blackColor),
                                   ),
                                 ),
                               )
@@ -320,6 +332,7 @@ class HomeServices extends StatelessWidget {
                                     fontFamily: 'Poppins',
                                     fontSize: 25,
                                     fontWeight: FontWeight.bold,
+                                    color: Color(blackColor),
                                   ),
                                 ),
                               ),
@@ -334,6 +347,7 @@ class HomeServices extends StatelessWidget {
                                     fontFamily: 'Poppins',
                                     fontSize: 17,
                                     height: 1.2,
+                                    color: Color(blackColor),
                                   ),
                                 ),
                               )

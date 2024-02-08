@@ -2,6 +2,7 @@
 
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:skinxplore/constants/break_points.dart';
 
 class ChatData extends StatelessWidget {
   const ChatData({super.key, required this.msg, required this.chatIndex});
@@ -44,10 +45,12 @@ class ChatData extends StatelessWidget {
                                 child: Text(
                                   msg,
                                   style: TextStyle(
-                                      fontFamily: 'Poppins',
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w600,
-                                      color: Color(0xFF2C323F)),
+                                    fontFamily: 'Poppins',
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w400,
+                                    color: Color(0xFF2C323F),
+                                    letterSpacing: 0.4,
+                                  ),
                                 ),
                               ),
                             ),
@@ -71,8 +74,9 @@ class ChatData extends StatelessWidget {
                                 style: TextStyle(
                                   fontFamily: 'Poppins',
                                   fontSize: 14,
-                                  fontWeight: FontWeight.w600,
-                                  color: Color(0xFF2C323F),
+                                  fontWeight: FontWeight.w400,
+                                  color: Color(blackColor),
+                                  letterSpacing: 0.4,
                                 ),
                               ),
                             ),
@@ -105,8 +109,9 @@ class ChatData extends StatelessWidget {
                                       textStyle: TextStyle(
                                         fontFamily: 'Poppins',
                                         fontSize: 14,
-                                        fontWeight: FontWeight.w600,
+                                        fontWeight: FontWeight.w400,
                                         color: Color(0xFF2C323F),
+                                        letterSpacing: 0.4,
                                       ),
                                     ),
                                   ],
@@ -140,8 +145,9 @@ class ChatData extends StatelessWidget {
                                     textStyle: TextStyle(
                                       fontFamily: 'Poppins',
                                       fontSize: 14,
-                                      fontWeight: FontWeight.w600,
+                                      fontWeight: FontWeight.w400,
                                       color: Color(0xFF2C323F),
+                                      letterSpacing: 0.4,
                                     ),
                                   ),
                                 ],

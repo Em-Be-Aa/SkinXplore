@@ -29,7 +29,7 @@ class HeroSection extends StatelessWidget {
                     child: Text(
                       "Your very own",
                       style: TextStyle(
-                        fontSize: 85,
+                        fontSize: 100,
                         fontWeight: FontWeight.bold,
                         fontFamily: 'Poppins',
                         color: Color(0xFF2C323F),
@@ -41,9 +41,9 @@ class HeroSection extends StatelessWidget {
                   Container(
                     alignment: Alignment.centerLeft,
                     child: Text(
-                      "self diagnosis",
+                      "skin diagnosis",
                       style: TextStyle(
-                        fontSize: 85,
+                        fontSize: 100,
                         fontWeight: FontWeight.bold,
                         fontFamily: 'Poppins',
                         color: Color(0xFF146356),
@@ -57,7 +57,7 @@ class HeroSection extends StatelessWidget {
                     child: Text(
                       "tool.",
                       style: TextStyle(
-                        fontSize: 85,
+                        fontSize: 100,
                         fontWeight: FontWeight.bold,
                         fontFamily: 'Poppins',
                         color: Color(0xFF2C323F),
@@ -99,7 +99,7 @@ class HeroSection extends StatelessWidget {
                                 Text(
                                   "Learn More",
                                   style: TextStyle(
-                                    fontSize: 25,
+                                    fontSize: 29,
                                     fontFamily: 'Poppins',
                                     fontWeight: FontWeight.bold,
                                     color: Color(

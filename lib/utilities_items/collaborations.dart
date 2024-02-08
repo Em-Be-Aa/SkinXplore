@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers
 
 import 'package:flutter/material.dart';
+import 'package:skinxplore/constants/break_points.dart';
 
 class Collab extends StatelessWidget {
   const Collab({super.key});
@@ -24,6 +25,7 @@ class Collab extends StatelessWidget {
                 fontFamily: 'Poppins',
                 fontSize: 50,
                 fontWeight: FontWeight.bold,
+                color: Color(blackColor),
               ),
             ),
           ),
@@ -61,9 +63,11 @@ class Collab extends StatelessWidget {
             child: Text(
               'contact us',
               style: TextStyle(
-                  fontFamily: 'Poppins',
-                  fontSize: 35,
-                  fontWeight: FontWeight.bold),
+                fontFamily: 'Poppins',
+                fontSize: 35,
+                fontWeight: FontWeight.bold,
+                color: Color(blackColor),
+              ),
             ),
           ),
           Container(

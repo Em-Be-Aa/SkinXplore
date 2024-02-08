@@ -45,22 +45,43 @@ class _ChatPanelState extends State<ChatPanel> {
   Widget build(BuildContext context) {
     return Visibility(
       visible: isContainerVisible,
-      child: Align(
-        alignment: Alignment.bottomRight,
+      child: Positioned(
+        right: 50,
+        bottom: 20,
         child: Padding(
-          padding: const EdgeInsets.all(80.0),
+          padding: const EdgeInsets.all(30.0),
           child: BackdropFilter(
             filter: ImageFilter.blur(
-              sigmaX: 5,
-              sigmaY: 5,
+              sigmaX: 20,
+              sigmaY: 20,
             ),
             child: Container(
               width: 400,
               height: 500,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                color: Colors.white.withOpacity(0.7),
-              ),
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.white.withOpacity(0.9),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.shade600,
+                      offset: Offset(3, 3),
+                      blurRadius: 7,
+                      spreadRadius: 2,
+                    ),
+                    BoxShadow(
+                      color: Colors.white.withOpacity(0.8),
+                      offset: Offset(-3, -3),
+                      blurRadius: 7,
+                      spreadRadius: 2,
+                    ),
+                  ],
+                  gradient: LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      colors: [
+                        Colors.white.withOpacity(0.75),
+                        Colors.white.withOpacity(0.55),
+                      ])),
               child: Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: SafeArea(
@@ -146,6 +167,7 @@ class _ChatPanelState extends State<ChatPanel> {
                                       fontSize: 15,
                                       fontWeight: FontWeight.bold,
                                       color: Color(0xFF2C323F).withOpacity(0.5),
+                                      letterSpacing: 0.4,
                                     ),
                                   ),
                                 ),
@@ -219,7 +241,7 @@ class _ChatPanelState extends State<ChatPanel> {
         SnackBar(
           backgroundColor: Colors.red,
           content: Text(
-            error.toString(),
+            "Check Internet Connection",
           ),
         ),
       );

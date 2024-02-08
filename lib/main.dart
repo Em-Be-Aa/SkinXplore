@@ -2,12 +2,9 @@
 import 'package:flutter/material.dart';
 import 'package:skinxplore/pages/about_page.dart';
 import 'package:skinxplore/pages/detail_exam.dart';
-import 'package:skinxplore/utilities_items/image_class_backend.dart';
 import 'package:skinxplore/pages/home_page.dart';
 import 'package:skinxplore/pages/login_page.dart';
 import 'package:skinxplore/pages/services_page.dart';
-
-import 'pages/chat_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,15 +23,13 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
         title: "SkinXplore",
         debugShowCheckedModeBanner: false,
-        home: Chat(),
+        home: HomePage(),
         routes: {
           '/homepage': (context) => HomePage(),
           '/servicespage': (context) => ServicesPage(),
           '/loginpage': (context) => LoginPage(),
           '/aboutpage': (context) => AboutPage(),
-          '/flupage': (context) => MyHomePage(),
           '/detailexampage': (context) => DetailExam(),
-          '/chatpage': (context) => Chat(),
         });
   }
 }

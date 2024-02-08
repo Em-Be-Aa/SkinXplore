@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:skinxplore/constants/break_points.dart';
 
 class AboutUtility extends StatelessWidget {
   const AboutUtility({super.key});
@@ -27,7 +28,7 @@ class AboutUtility extends StatelessWidget {
                           fontSize: 40,
                           fontFamily: 'Poppins',
                           fontWeight: FontWeight.bold,
-                          color: Color(0XFF2C323F),
+                          color: Color(blackColor),
                           shadows: [
                             Shadow(
                               color: Colors.transparent,
@@ -36,7 +37,7 @@ class AboutUtility extends StatelessWidget {
                             ),
                           ]),
                     ),
-                                        onPressed: (){
+                    onPressed: () {
                       Navigator.pushNamed(context, '/homepage');
                     },
                   ),
@@ -51,14 +52,17 @@ class AboutUtility extends StatelessWidget {
                 alignment: Alignment.center,
                 child: Text(
                   "About Us",
-                  style:
-                      TextStyle(fontSize: 40, fontFamily: 'Poppins', shadows: [
-                    Shadow(
-                      color: Colors.transparent,
-                      blurRadius: 2.0,
-                      offset: Offset(1.0, 1.0),
-                    ),
-                  ]),
+                  style: TextStyle(
+                      fontSize: 40,
+                      fontFamily: 'Poppins',
+                      color: Color(blackColor),
+                      shadows: [
+                        Shadow(
+                          color: Colors.transparent,
+                          blurRadius: 2.0,
+                          offset: Offset(1.0, 1.0),
+                        ),
+                      ]),
                 ),
               ),
             ),
@@ -70,14 +74,17 @@ class AboutUtility extends StatelessWidget {
                 alignment: Alignment.center,
                 child: Text(
                   "Guiding Skin to Clarity",
-                  style:
-                      TextStyle(fontSize: 26, fontFamily: 'Poppins', shadows: [
-                    Shadow(
-                      color: Colors.transparent,
-                      blurRadius: 2.0,
-                      offset: Offset(1.0, 1.0),
-                    ),
-                  ]),
+                  style: TextStyle(
+                      fontSize: 26,
+                      fontFamily: 'Poppins',
+                      color: Color(blackColor),
+                      shadows: [
+                        Shadow(
+                          color: Colors.transparent,
+                          blurRadius: 2.0,
+                          offset: Offset(1.0, 1.0),
+                        ),
+                      ]),
                 ),
               ),
             ),
@@ -112,6 +119,7 @@ class AboutUtility extends StatelessWidget {
                         fontSize: 55,
                         fontFamily: 'Poppins',
                         fontWeight: FontWeight.bold,
+                        color: Color(blackColor),
                         shadows: [
                           Shadow(
                             color: Colors.transparent,
@@ -200,6 +208,7 @@ class AboutUtility extends StatelessWidget {
                           fontSize: 50,
                           fontFamily: 'Poppins',
                           fontWeight: FontWeight.bold,
+                          color: Color(blackColor),
                           shadows: [
                             Shadow(
                               color: Colors.transparent,
