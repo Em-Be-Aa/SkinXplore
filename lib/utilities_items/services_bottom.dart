@@ -27,7 +27,7 @@ class _ServicesBottomState extends State<ServicesBottom> {
                   context: context,
                   builder: ((context) => AlertDialog(
                         title: Text(
-                          " Feature not Available.",
+                          " Feature not available yet.",
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 20,

@@ -55,6 +55,7 @@ class HomeServices extends StatelessWidget {
                         fontFamily: 'Poppins',
                         fontSize: 50,
                         fontWeight: FontWeight.bold,
+                        height: 0.9,
                         color: Color(blackColor),
                       ),
                     ),

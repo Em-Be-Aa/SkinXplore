@@ -4,6 +4,7 @@ import 'package:skinxplore/pages/about_page.dart';
 import 'package:skinxplore/pages/detail_exam.dart';
 import 'package:skinxplore/pages/home_page.dart';
 import 'package:skinxplore/pages/login_page.dart';
+import 'package:skinxplore/pages/pricing_page.dart';
 import 'package:skinxplore/pages/services_page.dart';
 
 void main() {
@@ -30,6 +31,7 @@ class _MyAppState extends State<MyApp> {
           '/loginpage': (context) => LoginPage(),
           '/aboutpage': (context) => AboutPage(),
           '/detailexampage': (context) => DetailExam(),
+          '/pricingpage': (context) => PricingPage(),
         });
   }
 }

@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, sort_child_properties_last, prefer_const_literals_to_create_immutables, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
+import 'package:skinxplore/constants/break_points.dart';
 import 'package:skinxplore/utilities_items/collaborations.dart';
 import 'package:skinxplore/utilities_items/hero_section.dart';
 import 'package:skinxplore/utilities_items/home_services.dart';
@@ -37,10 +38,10 @@ class _HomeUtilityState extends State<HomeUtility> {
               Text(
                 "SkinXplore",
                 style: TextStyle(
-                  fontFamily: "Poppins",
-                  fontWeight: FontWeight.bold,
-                  fontSize: screenWidth * 0.02,
-                ),
+                    fontFamily: "Poppins",
+                    fontWeight: FontWeight.bold,
+                    fontSize: screenWidth * 0.02,
+                    color: Color(blackColor)),
               )
             ],
           ),
@@ -89,7 +90,8 @@ class _HomeUtilityState extends State<HomeUtility> {
                 ),
               ),
               onPressed: () {
-                // Handle the search button press
+                Navigator.pushNamed(
+                    context, '/pricingpage'); // Handle the search button press
               },
             ),
           ),

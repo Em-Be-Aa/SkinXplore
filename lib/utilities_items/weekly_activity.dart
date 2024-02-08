@@ -16,7 +16,7 @@ class WeeklyActivity extends StatelessWidget {
           context: context,
           builder: ((context) => AlertDialog(
                 title: Text(
-                  " Feature not Available.",
+                  " Feature not available yet.",
                   style: TextStyle(
                     fontFamily: 'Poppins',
                     fontSize: 20,
