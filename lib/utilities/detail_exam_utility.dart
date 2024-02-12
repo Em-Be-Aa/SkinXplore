@@ -333,14 +333,15 @@ class _DetailExamUtilityState extends State<DetailExamUtility> {
                           ),
                           child: Column(
                             children: [
-                              Text(
-                                'A',
-                                style: TextStyle(
-                                  fontFamily: 'Poppins',
-                                  fontSize: 25,
-                                  fontWeight: FontWeight.bold,
-                                  letterSpacing: 2,
-                                  color: Color(blackColor),
+                              Container(
+                                height: 40,
+                                width: 40,
+                                decoration: BoxDecoration(
+                                  color: Colors.transparent,
+                                  image: DecorationImage(
+                                      image: AssetImage(
+                                          'assets/images/nature.png'),
+                                      alignment: Alignment.center),
                                 ),
                               ),
                               SizedBox(
@@ -417,14 +418,15 @@ class _DetailExamUtilityState extends State<DetailExamUtility> {
                           ),
                           child: Column(
                             children: [
-                              Text(
-                                'A',
-                                style: TextStyle(
-                                  fontFamily: 'Poppins',
-                                  fontSize: 25,
-                                  fontWeight: FontWeight.bold,
-                                  letterSpacing: 2,
-                                  color: Color(blackColor),
+                              Container(
+                                height: 40,
+                                width: 40,
+                                decoration: BoxDecoration(
+                                  color: Colors.transparent,
+                                  image: DecorationImage(
+                                      image:
+                                          AssetImage('assets/images/type.png'),
+                                      alignment: Alignment.center),
                                 ),
                               ),
                               SizedBox(
@@ -501,14 +503,15 @@ class _DetailExamUtilityState extends State<DetailExamUtility> {
                           ),
                           child: Column(
                             children: [
-                              Text(
-                                'A',
-                                style: TextStyle(
-                                  fontFamily: 'Poppins',
-                                  fontSize: 25,
-                                  fontWeight: FontWeight.bold,
-                                  letterSpacing: 2,
-                                  color: Color(blackColor),
+                              Container(
+                                height: 40,
+                                width: 40,
+                                decoration: BoxDecoration(
+                                  color: Colors.transparent,
+                                  image: DecorationImage(
+                                      image: AssetImage(
+                                          'assets/images/confidence.png'),
+                                      alignment: Alignment.center),
                                 ),
                               ),
                               SizedBox(

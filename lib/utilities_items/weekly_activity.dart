@@ -56,18 +56,59 @@ class WeeklyActivity extends StatelessWidget {
             ),
             child: Column(
               children: [
-                Text(
-                  'A',
-                  style: TextStyle(
-                    fontFamily: 'Poppins',
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: 2,
-                    color: Color(blackColor),
-                  ),
-                ),
-                SizedBox(
-                  height: 35,
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(2.0),
+                      child: Container(
+                        height: 60,
+                        width: 60,
+                        decoration: BoxDecoration(
+                          color: Colors.transparent,
+                          image: DecorationImage(
+                              image: AssetImage('assets/images/activity.png'),
+                              alignment: Alignment.center),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(2.0),
+                      child: Container(
+                        height: 40,
+                        width: 170,
+                        decoration: BoxDecoration(
+                          color: Colors.transparent,
+                        ),
+                        child: Text(
+                          'Activity',
+                          style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold,
+                              color: Color(blackColor)),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 70,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(2.0),
+                      child: Container(
+                        height: 70,
+                        width: 70,
+                        decoration: BoxDecoration(
+                          color: Colors.transparent,
+                          image: DecorationImage(
+                              image: AssetImage('assets/images/week.png'),
+                              alignment: Alignment.center),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
