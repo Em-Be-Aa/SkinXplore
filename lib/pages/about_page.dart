@@ -1,15 +1,20 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:skinxplore/utilities/about_utility.dart';
+import 'package:skinxplore/desktop/about_utility.dart';
 
 class AboutPage extends StatelessWidget {
-  const AboutPage({super.key});
-
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: AboutUtility(),
+    double screenWidth = MediaQuery.of(context).size.width;
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        if (screenWidth > 450) {
+          return AboutUtility();
+        } else {
+          return Scaffold();
+        }
+      },
     );
   }
 }

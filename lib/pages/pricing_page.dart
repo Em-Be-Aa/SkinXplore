@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:skinxplore/constants/break_points.dart';
-import 'package:skinxplore/utilities/pricing_utility.dart';
+import 'package:skinxplore/desktop/pricing_utility.dart';
 
 class PricingPage extends StatelessWidget {
   const PricingPage({super.key});

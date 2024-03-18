@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:skinxplore/utilities/login_utility.dart';
+import 'package:skinxplore/desktop/login_utility.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
