@@ -4,7 +4,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:skinxplore/constants/break_points.dart';
-import 'package:skinxplore/utilities_items/weekly_activity.dart';
+import 'package:skinxplore/desktop_utilities_items/weekly_activity.dart';
 
 class ExamResult extends StatelessWidget {
   const ExamResult({super.key});

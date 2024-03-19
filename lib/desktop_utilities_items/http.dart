@@ -4,8 +4,8 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:http/http.dart' as http;
-import 'package:skinxplore/utilities_items/chat_storage.dart';
-import 'package:skinxplore/utilities_items/models.dart';
+import 'package:skinxplore/desktop_utilities_items/chat_storage.dart';
+import 'package:skinxplore/desktop_utilities_items/models.dart';
 import 'api_key.dart';
 
 fetchdata(String url) async {

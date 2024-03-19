@@ -2,9 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:skinxplore/constants/break_points.dart';
-import 'package:skinxplore/utilities_items/collaborations.dart';
-import 'package:skinxplore/utilities_items/hero_section.dart';
-import 'package:skinxplore/utilities_items/home_services.dart';
+import 'package:skinxplore/desktop_utilities_items/collaborations.dart';
+import 'package:skinxplore/desktop_utilities_items/hero_section.dart';
+import 'package:skinxplore/desktop_utilities_items/home_services.dart';
 
 class HomeUtility extends StatefulWidget {
   const HomeUtility({super.key});
@@ -20,6 +20,7 @@ class _HomeUtilityState extends State<HomeUtility> {
 
     return Scaffold(
       backgroundColor: Color(0XFFE8E4EC),
+      
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: Container(

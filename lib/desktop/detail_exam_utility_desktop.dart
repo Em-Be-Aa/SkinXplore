@@ -7,10 +7,10 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:skinxplore/constants/break_points.dart';
-import 'package:skinxplore/utilities_items/chat_panel.dart';
+import 'package:skinxplore/desktop_utilities_items/chat_panel.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:skinxplore/utilities_items/http.dart';
-import 'package:skinxplore/utilities_items/weekly_activity.dart';
+import 'package:skinxplore/desktop_utilities_items/http.dart';
+import 'package:skinxplore/desktop_utilities_items/weekly_activity.dart';
 
 class DetailExamUtility extends StatefulWidget {
   const DetailExamUtility({super.key});

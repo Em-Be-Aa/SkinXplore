@@ -18,13 +18,12 @@ class MyApp extends StatefulWidget {
   State<MyApp> createState() => _MyAppState();
 }
 
-
 class _MyAppState extends State<MyApp> {
-  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: "SkinXplore",
+        title: 'SkinXplore',
+        
         debugShowCheckedModeBanner: false,
         home: HomePage(),
         routes: {

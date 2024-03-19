@@ -4,9 +4,9 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:skinxplore/utilities_items/chat_data.dart';
-import 'package:skinxplore/utilities_items/chat_storage.dart';
-import 'package:skinxplore/utilities_items/http.dart';
+import 'package:skinxplore/desktop_utilities_items/chat_data.dart';
+import 'package:skinxplore/desktop_utilities_items/chat_storage.dart';
+import 'package:skinxplore/desktop_utilities_items/http.dart';
 
 class ChatPanel extends StatefulWidget {
   const ChatPanel({super.key});
