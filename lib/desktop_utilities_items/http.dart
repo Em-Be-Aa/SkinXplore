@@ -1,4 +1,4 @@
-// ignore_for_file: avoid_print
+// ignore_for_file: avoid_print, prefer_interpolation_to_compose_strings
 
 import 'dart:convert';
 import 'dart:io';
@@ -18,7 +18,7 @@ class ApiService {
     try {
       var response = await http.get(
           Uri.parse("https://api.openai.com/v1/models"),
-          headers: {'Authorization': 'Bearer $API_KEY'});
+          headers: {'Authorization': 'Bearer $apiKey'});
       Map jsonResponse = jsonDecode(response.body);
       if (jsonResponse['error'] != null) {
         // print('json error ${jsonResponse['error']['message']}');
@@ -44,7 +44,7 @@ class ApiService {
       var response = await http.post(
         Uri.parse("https://api.openai.com/v1/chat/completions"),
         headers: {
-          'Authorization': 'Bearer $API_KEY',
+          'Authorization': 'Bearer $apiKey',
           'Content-Type': 'application/json',
         },
         body: jsonEncode(
